@@ -26,9 +26,7 @@ let
 
   # srcs used for overrides
   overrideSrcs = rhyolitePackages // {
-    aeson-gadt-th = repos.aeson-gadt-th;
     bytestring-trie = repos.bytestring-trie;
-    dependent-monoidal-map = repos.dependent-monoidal-map;
     groundhog = repos.groundhog + /groundhog;
     groundhog-postgresql = repos.groundhog + /groundhog-postgresql;
     groundhog-th = repos.groundhog + /groundhog-th;
@@ -65,12 +63,6 @@ let
           }
         );
       validation = haskellLib.dontCheck super.validation;
-
-      dependent-sum-aeson-orphans = self.callHackageDirect {
-        pkg = "dependent-sum-aeson-orphans";
-        ver = "0.2.1.0";
-        sha256 = "18ahi78f42dlh1gq0lzab0ik8c3vvlphdic4abywcqv2q0ilqxq7";
-      } {};
 
       postgresql-lo-stream = self.callHackageDirect {
         pkg = "postgresql-lo-stream";
