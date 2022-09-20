@@ -1,8 +1,8 @@
 {
-  "owner": "obsidiansystems",
+  "owner": "serokell",
   "repo": "obelisk",
-  "branch": "master",
+  "branch": "rvem/kiln-darwin-nixpkgs-fix-1",
   "private": false,
-  "rev": "d9df151ed175be4f2dff721676e412a88a0596c1",
-  "sha256": "1wm2q4blqga6appp193idkapnqsan7qnkz29kylqag1y11fk4rrj"
+  "rev": "8b6d132f609757b84821d8c10b05404f5305c1d6",
+  "sha256": "1gc0ikzhp00akabzlqvssj7ispjmiyixla5pl5fikv4hwdq9lg0j"
 }
